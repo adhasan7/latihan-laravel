@@ -20,13 +20,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home', [
-        'name' => 'Rijal',
-        'role' => 'admin',
+        'name' => 'Reni',
+        'role' => 'staff',
+        'buah' => ['mangga','apel','anggur','jambu','pir']
     ]);
 });
 
 
-Route::view('/contact', 'contact', ['name' => 'Taylor','kontak' => '08999' ]);
+Route::view('/contact', 'contact', ['name' => 'Reni','kontak' => '08999' ]);
 
 
 
